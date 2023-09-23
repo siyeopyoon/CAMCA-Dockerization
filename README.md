@@ -8,4 +8,4 @@
 4. Build Docker container using \
 "sudo docker build -f ./dockerfile  -t hellocamca ./"
 5. Run hellocamca image with mounting a folder of GPU server as "external_folder" \
-"sudo docker run -v /home/local/PARTNERS/sy1045/:/external_folder hellocamca"
+"sudo docker run --rm --gpus all -v /home/local/PARTNERS/sy1045/:/external_folder hellocamca"
